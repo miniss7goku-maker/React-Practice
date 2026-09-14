@@ -1,4 +1,4 @@
-import React from 'react'
+// src/App.tsx
 import {
   Route,
   createBrowserRouter,
@@ -9,13 +9,16 @@ import MainLayout from './Layouts/MainLayout'
 import HomePage from './pages/HomePage'
 import JobsPage from './pages/JobsPage'
 import NotFound from './pages/NotFound'
+import JobPage from './pages/JobPage'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<MainLayout />}>
-      <Route path='/' element={<HomePage />} />
-      <Route path='/jobs' element={<JobsPage />} />
-      <Route path='*' element={<NotFound />} />
+      <Route index element={<HomePage />} />
+      <Route path="/jobs" element={<JobsPage />} />
+      {/* Add slash and pluralize */}
+      <Route path="/jobs/:id" element={<JobPage />} />
+      <Route path="*" element={<NotFound />} />
     </Route>
   )
 )

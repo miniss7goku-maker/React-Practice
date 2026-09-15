@@ -1,4 +1,5 @@
-{"jobs":[
+{
+  "jobs": [
     {
       "id": "1",
       "title": "Senior React Developer",
@@ -82,6 +83,21 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
+    },
+    {
+      "title": "Dwight's Job",
+      "type": "Full-Time",
+      "description": "no idea",
+      "location": "home",
+      "salary": "Under $50K",
+      "company": {
+        "name": "dwight's company",
+        "description": "you know dwight",
+        "contactEmail": "miniss7goku@gmail.com",
+        "contactPhone": "9143460787"
+      },
+      "id": "-We2kCIo2wU"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
